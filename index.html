@@ -3,15 +3,8 @@
    <link rel="stylesheet" href="style.css">
   </head>
 <body>
-<section id= "main">
-  <div class="bg"></div>
-<div class="bg bg2"></div>
-<div class="bg bg3"></div>
-  <div class="content">
-    <h1> Hi, I'm <span style="color: black">Ashley Christie</span>.<br> I am a Front End Developer </h1>
-    <button id="work">View my work -> </button>
-    </div>
-    <div id = "nav">
+<section id= "main" class="grid">
+    <div id = "nav" class="grid-1">
       <nav id = "nav-bar">
         <ul>
           <li><a class ="nav-link" href=#contact>Contact</a></li>
@@ -21,52 +14,49 @@
         </ul>
       </nav>
     </div>
-  </section>
-
-    <section id="about">
-      <div class="image">
-      <img src="headshot4.jpg"></img>
-      </div>
-      <div class="bio">
-        <p> I currently reside in the beautiful state of New York. I strongly beleive that increasing access and utility in technology can build self determination and enhance a user's experience. I am passionate about solving problems and creating products that user's find impactful. <br><br>
-        Beyond the company of my computer, I love to read fiction, write short stories and take long hikes.
-        </p><br>
-        <h3 id="tech">Languages I speak:</h3>
-          <ul>
-            <li><img src="html.png" width="75px" height="75px"></li>
-            <li><img src="css.png" width="75px" height="75px"></li>
-            <li><img src="javascript.jpg" width="75px" heifht="75px"></li>
-          </ul>
-          <a href=#contact></a>
-      </div>
-    </section>
-  <section id="projects">
-    <h2>Projects</h2>
-    <h3>HTML, CSS & JavaScript</h3>
-    <!--links of projects with clickable images of projects/under the section of tech stack used with the project -->
-  </section>
-  <section id="contact">
-    <h2 id="interest"><span style="color: #0099ff">Have a question or want to work together?</span></h2>
-    <h3 id="tea">Tea or Coffee?</h3>
-    <div class="container">
-      <form action="action_page.php">
-
-        <label for="fname">First Name</label>
-        <input type="text" id="name" name="name" placeholder="Name">
-
-        <label for="lname">Last Name</label>
-        <input type="text" id="email" name="email" placeholder="Enter Email">
-
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Your Message" style="height:200px"></textarea>
-
-        <input type="submit" value="Submit">
-
-      </form>
+    <div id="content" class="grid-2">
+    
+      <h1>Hi, I'm <span style ="color:#FFFFBF">Ashley Christie</span>.<br> I am a Front End Developer </h1>
     </div>
-      <a id="contact-list"href = ""><img src="github.jpg" width = "50px" height="50px"></a>
-      <a id="contact-list"href = ""><img src="linkedin.png" width = "50px" height="50px"></a>
-      <a id="contact-list"href = "mailto: achristie0319@gmail.com"><img src="email_icon.jpg" width="50px" height="50px"></a>
-      <a id="contact-list"href = ""><img src="twit.png" width="50px" height="50px"></a>
+  
+  <div id="about" class="grid-3">
+    <div class="image">
+      <img src="images/headshot4.jpg"></img>
+    </div>
+    <div class="bio">
+      <p> I currently reside in the beautiful state of New York. I strongly beleive that increasing access and utility in technology can build self determination and enhance a user's experience. As a previous social worker I am entering the field of technology because I want to continue to explore other ways that I can be impactful. I enjoy the process of solving problems and creating products that user's find impactful. I welcome challenges to level up my skills<br><br>
+      Beyond the company of my computer, I love to read fiction, write short stories and take long hikes.
+      </p>
+      <h3 id="tech">Languages I speak:</h3>
+        <ul>
+          <li><img src="images/html.png" width="50px" height="50px"></li>
+          <li><img src="images/css.png" width="50px" height="50px"></li>
+          <li><img src="images/javascript.jpg" width="50px" heifht="50px"></li>
+        </ul>
+        <a href=#contact></a>
+    </div>
+  </div>  
+  <div id="projects" class="grid-4">
+    <div id="project-header">
+      <h2>Projects</h2>
+    </div>
+    <div id="project-links">
+      <h3>HTML, CSS & JavaScript</h3>
+      <!--links of projects with clickable images of projects/under the section of tech stack used with the project -->
+    </div>
+  </div>
+  <div id="contact" class="grid-5">
+    <div id="contact-header">
+      <h2 id="interest">Have a question or want to work together?</h2>
+      <h3 id="tea">Tea or Coffee?</h3>
+    </div>
+    <div id="contact-icons"> 
+      <a id="contact-list"href = ""><img src="images/github.jpg" width = "50px" height="50px"></a>
+      <a id="contact-list"href = ""><img src="images/linkedin.png" width = "50px" height="50px"></a>
+      <a id="contact-list"href = "mailto: achristie0319@gmail.com"><img src="images/email_icon.jpg" width="50px" height="50px"></a>
+      <a id="contact-list"href = ""><img src="images/twit.png" width="50px" height="50px"></a>
+    </div>
+  </div>
+</section>
       <script src="script.js">
   
