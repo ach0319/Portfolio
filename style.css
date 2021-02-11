@@ -10,6 +10,9 @@ body {
   position:relative;
   text-align:center;
   border-radius: 100px/50px;
+  height: 100%;
+  display:flex;
+  min-height: 100vh;
   
 }
 
@@ -17,6 +20,7 @@ h1 {
   font-family:rockwell;
   color: black;
   font-size: 2em;
+  margin: auto;
 }
 
 
@@ -59,6 +63,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 20px 0 20px 20px;
+  max-width: 82em;
 }
 
 .bio {
@@ -86,6 +91,9 @@ h1 {
   width: 100%;
   border-radius:.25em;
   box-shadow:0 0 .25em rgba(0,0,0,.25);
+  display: flex;
+  padding: 20px 0px 20px 20px;
+  justify-content: center;
 }
 
 /*contact section*/
@@ -95,6 +103,9 @@ h1 {
   border-radius:.25em;
   box-shadow:0 0 .25em rgba(0,0,0,.25);
   text-align: center;
+  display: flex;
+  padding: 20px 0px 20px 20px;
+  justify-content: center;
 }
 
 #interest {
@@ -102,18 +113,29 @@ h1 {
   color: #212F3D;
 }
 
+#contact-header {
+  display: block;
+}
+
 #contact-list {
 font-size: 1.25em;
 text-decoration: none;
-padding-right: 40px;
+}
+
+#contact-icons {
+  display: block;
+  padding-bottom: 40px;
 }
 
 #tea {
   color: #616A6B;
+  text-align: center;
+  
 }
 
-
-  .grid {
-    display: grid;
-    grid-template-rows: 1fr 3.5fr 2fr 3fr 2fr;
+@media(min-width: 1135px) {
+.grid {
+  display: flex;
+  flex-direction: column;
   }
+}
