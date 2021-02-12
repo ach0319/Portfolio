@@ -25,31 +25,33 @@ h1 {
 
 
 /* header*/
-
-
-#nav-bar {
-  position: fixed;
-  top: 0;
-  right: 10px;
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+}
+.topnav a {
   color: white;
-  height: 60px;
-  width: 100%;
-
-}
-
-#nav li {
-  float: right;
-  list-style-type: none;
-  margin-left: 30px;
-  margin-top: 8px;
-}
-
-.nav-link{
-  font-family: rockwell;
-  font-weight: bold;
-  font-size: 1.25em;
-  color: black;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav #nav-bar {
+  display: none;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
 }
 
 /* about me section */
@@ -71,18 +73,21 @@ h1 {
   font-weight: bold;
   font-size: 1em;
   width: 100%;
-  ;
+  margin-left: 1em;
+  display: block;
  
 }
 
 .image {
   flex-basis: 15%;
+  display: flex;
 }
 
 #about li {
   list-style-type: none;
   float: left;
   padding: 10px;
+
 }
 /* project section */
 
@@ -132,7 +137,12 @@ text-decoration: none;
   text-align: center;
   
 }
-
+@media screen and (max-width: 767px) {
+  .grid-3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media(min-width: 1135px) {
 .grid {
   display: flex;
