@@ -1,19 +1,19 @@
-body {
-  background-image: linear-gradient(#212F3D,#616A6B,#212F3D)
+body { 
+  background-color: #616A6B;
+  margin: 0;
+  padding: 0;
 }
 
 /* landing page */
 
 #content {
-  background-color: transparent;
+  background-image: linear-gradient(#212F3D,#616A6B,#212F3D);
   margin: auto;
   position:relative;
   text-align:center;
-  border-radius: 100px/50px;
   height: 100%;
   display:flex;
-  min-height: 100vh;
-  
+  flex: 1 1 50%; 
 }
 
 h1 {
@@ -25,35 +25,29 @@ h1 {
 
 
 /* header*/
+
+#nav {
+  margin-top: 2.5rem;
+
+}
 .topnav {
-  overflow: hidden;
-  background-color: transparent;
-  position: relative;
+  background-color: #616A6B;
 }
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+#nav-bar {
   display: block;
-}
-.topnav #nav-bar {
-  display: none;
-}
-
-.topnav a.icon {
-  background: black;
-  display: block;
+  right: 1em;
+  top: .5em;
   position: absolute;
-  right: 0;
-  top: 0;
 }
 
-.topnav a:hover {
-  background-color: white;
-  color: black;
+.nav-link{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: .75em;
+  font-family: rockwell;
+  cursor: pointer;
 }
-
 /* about me section */
 
 #about {
@@ -137,15 +131,25 @@ text-decoration: none;
   text-align: center;
   
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .grid-3 {
     display: flex;
     flex-direction: column;
   }
+  #content {
+
+    margin: 0px;
+    height: 50%;
+   }
+
+   #nav-bar {
+     justify-content: center;
+   }
 }
 @media(min-width: 1135px) {
 .grid {
   display: flex;
   flex-direction: column;
   }
+
 }
