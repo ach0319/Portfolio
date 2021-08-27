@@ -358,6 +358,14 @@ h1 {
   margin-top: 75px;
   height: 225px;
 }
+
+.e h3 {
+  color: white;
+}
+
+.e p {
+  margin-top: 13px;
+}
 .f {
   transform: rotateY(300deg) translateZ(400px);
   background: blue;
